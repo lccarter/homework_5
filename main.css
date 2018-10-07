@@ -1,62 +1,134 @@
+/* MAIN */
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
+    font-family:Helvetica, sans-serif, white;
     color: white;
+    /*background-color: green;*/
+    min-height: 100%;
+    margin: 0; 
+    background: url("https://cdn.hiconsumption.com/wp-content/uploads/2017/03/Best-Dogs-For-Hiking-00.jpg") no-repeat center center fixed;
+    /* Full height */
+
+    /* Center and scale the background image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-    float: left;
-    width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
-    padding: 20px;
+#main {
+   width: 60%;
+   margin: 0 auto; 
+   /*background-color: gray;*/
 }
 
-/* Style the list inside the menu */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Style the footer */
-footer {
-    background-color: #777;
+#entryPoint {
+    color: white; 
+    text-decoration: none;
     padding: 10px;
+    background-color: gray;
     text-align: center;
-    color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-    nav, article {
-        width: 100%;
-        height: auto;
-    }
+nav li {
+    display: inline;
+    margin: 0 5px 0 5px; 
+}
+
+nav li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#homeContent {
+    text-align: center;
+    padding: 250px 0;
+}
+
+h2 {
+    padding: 0 0 10px 0; 
+}
+
+/*PRODUCTS*/
+
+.row{
+    text-align: center;
+}
+
+.productItem{
+    display: inline-block;
+    width: 19vw;
+}
+
+.productImage{
+    display: inline-block;
+    width: 19vw;
+    height: 19vw;
+    overflow: hidden;
+}
+
+/*PRODUCT DETAIL*/
+
+.detailImage{
+    display: inline;
+    width: 25vw;
+    height: 25vw;
+}
+
+.colLeft{
+    display: inline-block;
+    width: 49%;
+}
+
+.colRight{
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    background-color: #444;
+    padding: 30px;
+}
+
+.detailDescription{
+    font-style: italic;
+}
+
+
+.detailColor{
+    color: #008; 
+}
+
+.selectedColor{
+    color: plum;
+
+}
+
+.detailSize{
+    color: #008;
+}
+
+.selectedSize{
+    color: palegreen;
+}
+
+/*ABOUT*/
+
+.aboutImage{
+    display: inline;
+    width: 25vw;
+    height: 30vw;
+}
+
+.aboutLabel{
+    color: #999;
+}
+
+.aboutDescription{
+    font-style: italic;
+    color: #777;
 }

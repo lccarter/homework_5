@@ -1,36 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>To Do App</title>
-    <meta charset="UTF-8">
-    <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<title>Products</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css"/>
 </head>
-
 <body>
-    <div id="container">
-        <header>
-            <h1>My To Do Lists</h1>
-            <nav>
-                <a href="index.html">main</a> -
-                <a href="index.html">settings</a>
-            </nav>
-        </header>
 
-        <div id="todo-lists">
-            <div class="list">
-                <h2 class="list-title">Groceries</h2>
-                <ol>
-                    <li>Eggs</li>
-                    <li>Milk</li>
-                    <li>Cereal</li>
-                </ol>
+<!--NAV-->
+    <div id="main">
+        <nav> 
+            <ul>
+                <li>
+                     <a href="main.html">Home</a>
+                        </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                 </ul>
+        </nav>
 
-            </div>
+<!--All Products-->
+    <section id="products">
+        <!--Row 1-->   
+        <div class="row"> 
+            <a href="detail.html">
+            <div class="productItem">
+                <img class="productImage" src="https://globaldogshop.com/images/products/1890-Rogz_Utility_Fanbelt_Purple_Large_Dog_Harness.jpg">
+                <div class="productLabel">Dog Harness</div>
+                <div class="productPrice">$10</div>
+                </div>
+            </a>
+            <div class="productItem">
+                <img class="productImage" src="https://d31omju6te34uu.cloudfront.net/media/catalog/product/C/W/CWMK_RYL-NVY_a.jpg">
+                <div class="productLabel">Cat Harness</div>
+                <div class="productPrice">$8</div>
+                </div>
+            <div class="productItem">
+                <img class="productImage" src="http://www.didntknowiwantedthat.com/wp-content/uploads/2017/12/Pet-Backpack.jpg"> 
+                <div class="productLabel">Cat Backpack</div>
+                <div class="productPrice">$25</div>
+                </div>
+                
+         <!--Row 2-->  
+        <div class="row">
+            <div class="productItem">
+                <img class="productImage" src="https://images-na.ssl-images-amazon.com/images/I/71vGuRS43oL._SX425_.jpg">
+                <div class="productLabel">Food Container</div>
+                <div class="productPrice">$6</div>
+                </div>
+            <div class="productItem">
+                <img class="productImage" src="https://image.dhgate.com/0x0/f2/albu/g7/M00/87/21/rBVaSlo7aSOACgBpAAFTfKHxKs4023.jpg">
+                <div class="productLabel">Water Bottle</div>
+                <div class="productPrice">$8</div>
+                </div>
+
+            <div class="productItem">
+                <img class="productImage" src="https://ae01.alicdn.com/kf/HTB1LgEkKVXXXXXGaXXXq6xXFXXX5/new-product-Deest-69-waterproof-tracker-long-standby-time-dog-cat-Pet-personal-gps-tracker-IOS.jpg_640x640.jpg">
+                <div class="productLabel">GPS Tracker</div>
+                <div class="productPrice">$20</div>
+                </div>
         </div>
-    </div>
-</body>
 
+
+</div>
+
+</body>
 </html>
